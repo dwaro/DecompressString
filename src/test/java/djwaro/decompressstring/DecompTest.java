@@ -34,7 +34,11 @@ public class DecompTest {
     @Test
     public void testDecomp() {
         Decompress decomp = new Decompress();
-        String newString = decomp.decomp("3[abc]4[ab]c");
-        assertEquals("abcabcabcababababc", newString);
+        String newString1 = decomp.decomp("3[abc]4[ab]c");
+        String newString2 = decomp.decomp("a3[ab2[m]]a2[b]f");
+        String newString3 = decomp.decomp("2[t]3[a2[b]]");
+        assertEquals("abcabcabcababababc", newString1);
+        assertEquals("aabmmabmmabmmabbf", newString2);
+        assertEquals("ttabbabbabb", newString3);
     }
 }

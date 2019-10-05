@@ -6,13 +6,11 @@ package djwaro.decompressstring;
 public class Main {
     public static void main(String[] args) {
         Decompress decomper = new Decompress();
-        //Decompress decomp = new Decompress("3[abc]4[ab]c");
-        String newString = decomper.decomp("a3[ab2[m]]a2[b]f");
-        String newString2 = decomper.decomp("2[t]3[a2[b]]");
-        System.out.println("--------------");
-        System.out.println(newString);
-        System.out.println(newString2);
-        System.out.println("--------------");
-        
+        String compressed = "a3[ab2[m]]a2[b]f";
+        String newString = decomper.decomp(compressed);
+        System.out.println("---------------------------------");
+        System.out.println("Compressed String: " + compressed);
+        System.out.println("Decompressed String: " + newString);
+        System.out.println("---------------------------------");
     }
 }

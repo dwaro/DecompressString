@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="djwaro.decompressstring.DecompTest" time="0.041" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="djwaro.decompressstring.DecompTest" time="0.093" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="12+33"/>
@@ -42,7 +42,7 @@
     <property name="java.class.path" value="/Applications/NetBeans/Apache NetBeans 11.1.app/Contents/Resources/NetBeans/java/maven/boot/plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="12"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=djwaro.decompressstring.DecompTest -Dmaven.ext.class.path=/Applications/NetBeans/Apache NetBeans 11.1.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar surefire:test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=djwaro.decompressstring.DecompTest -Dmaven.ext.class.path=/Applications/NetBeans/Apache NetBeans 11.1.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar test-compile surefire:test"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -59,14 +59,5 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="djwaro.decompressstring.DecompTest" name="djwaro.decompressstring.DecompTest.testDecomp" time="0.041">
-    <failure message="expected: &lt;abcabcabcababababc&gt; but was: &lt;asdfsa&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;abcabcabcababababc&gt; but was: &lt;asdfsa&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:54)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:195)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:184)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:179)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:508)
-	at djwaro.decompressstring.DecompTest.testDecomp(DecompTest.java:38)
-</failure>
-  </testcase>
+  <testcase classname="djwaro.decompressstring.DecompTest" name="djwaro.decompressstring.DecompTest.testDecomp" time="0.093"/>
 </testsuite>
