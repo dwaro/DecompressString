@@ -19,7 +19,7 @@ public class Decompress {
     private int level;
     
     Decompress() {
-        nums = "123456789";
+        nums = "0123456789";
         letters = "abcdefghijklmnopqrstuvwxyz";
         newString = "";
         tempStr = "";
